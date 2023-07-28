@@ -25,13 +25,18 @@ function add(){
     const dateInputElement = document.getElementById('date-input');
     const dueDate = dateInputElement.value;
 
-       toDoList.push({
+    if(inputElement.value == ''){
+        alert('Add a title to the task!');
+    }
+
+    else{
+        toDoList.push({
             name,
             dueDate
         });
 
         renderToDoList();
         inputElement.value = '';
-        dateInputElement.value = ''; 
+        dateInputElement.value = '';   
+    }
 }
-
