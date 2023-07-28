@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  </head>
+
+  <body>
+    <h1>To Do List</h1>
+
+    <div class="input-grid">
+      <div id="error"></div>
+      <input placeholder="Task" id="name-input">
+      <input type="date" id="date-input">
+      <button class="add-button" onclick="add();">Add</button>
+    </div>
+
+    <div class="list">
+
+      <div class="title-container" id="title-container">
+        <div>TASK</div>
+        <div>DUE DATE</div>
+      </div>
+
+      <div id="js-list" class="tasks-grid"></div>
+
+    </div>
+
+    <script src="todolist.js"></script>
+  </body>
+</html>
